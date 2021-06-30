@@ -19,7 +19,7 @@ public class PriceList {
     @Column (name = "unit")
     private String unit;
     @Column (name = "price")
-    private float price;
+    private double price;
     @Column (name = "date_update_price")
     private String dateUpdatePrice;
 
@@ -75,11 +75,11 @@ public class PriceList {
         this.unit = unit;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -93,14 +93,14 @@ public class PriceList {
 
     @Override
     public String toString() {
-        return "PriceList{" +
+        return
                 "id=" + id +
-                ", provider='" + provider + '\'' +
-                ", codeProduct=" + codeProduct +
-                ", nameProduct='" + nameProduct + '\'' +
-                ", unit='" + unit + '\'' +
-                ", price=" + price +
-                ", dateUpdatePrice='" + dateUpdatePrice + '\'' +
-                '}'+"\n";
+                ", Постащик: '" + provider + '\'' +
+                ", Код товара: " + codeProduct +
+                ", Наименование товара: '" + nameProduct + '\'' +
+                ", Еденица измерения: '" + unit + '\'' +
+                ", Цена: " + price +
+                ", Дата обновления цены: '" + dateUpdatePrice + '\'' +
+                "\n";
     }
 }

@@ -50,7 +50,7 @@ public class Parser {
                             pL.setUnit(cell.getStringCellValue());
                             break;
                         case 3:
-                            pL.setPrice((int) cell.getNumericCellValue());
+                            pL.setPrice(cell.getNumericCellValue());
                             break;
                     }
 

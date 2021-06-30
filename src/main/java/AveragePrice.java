@@ -9,7 +9,7 @@ public class AveragePrice {
             resoult += selectedLinesOfPriceList.get(i).getPrice();
         }
         resoult = resoult / selectedLinesOfPriceList.size();
-        System.out.println(resoult);
+        System.out.println("Средняя цена: "+resoult);
         return resoult;
     }
 }
