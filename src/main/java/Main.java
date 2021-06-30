@@ -1,7 +1,10 @@
+import java.io.IOException;
 
 public class Main {
 
-    public static void main(String... args) {
+    public static void main(String... args) throws IOException {
+        SelectorScenario.selectingScenario(args);
+
 
 //        Recorder.recordInDatabase("C:\\Users\\Shnoor64\\IdeaProjects\\CalculationOfMaterials\\testPrice\\testfile1.xls"
 //                ,"ИП Стройхлам"
@@ -12,7 +15,7 @@ public class Main {
 //                ,"30.06.2021");
 
 //        Searcher.searchByWord("силикатн");
-        AveragePrice.calculatingAveragePrice(Searcher.searchByWord("кирпич"));
+//        AveragePrice.calculatingAveragePrice(Searcher.searchByWord("кирпич"));
 //        Remover.RemoverFromDatabase("ИП Стройхлам");
     }
 }
